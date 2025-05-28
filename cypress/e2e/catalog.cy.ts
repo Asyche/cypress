@@ -13,6 +13,7 @@ describe('Test Product Catalog Page', () => {
 
   it('sorts products by price (low to high)', () => {
     cy.get('#SortBy').select('price-ascending');
+    cy.wait(1000);
     cy.get("#product-grid li")
     .first()
     .find("h3.card__heading a")

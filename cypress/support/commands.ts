@@ -53,4 +53,4 @@ Cypress.Commands.add("loginToShopify", () => {
   cy.visit('https://r0915550-realbeans.myshopify.com/');
   cy.get('input[type="password"]').type('lohtse');
   cy.get('button[type="submit"]').click();
-})
+});
